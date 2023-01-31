@@ -172,18 +172,29 @@ h3 {
 }
 
 
-@media only screen and (max-width: 600px) {
-  .myWork{
+@media only screen and (max-width: 320px) {
+      
+  .flex-conteainer {
+      flex-direction: column;
       padding: 5%;
       margin: 20px;
-      position: sticky;
-  }
+      justify-content: flex-end;
+    }
+  
     .workGrid {
-      grid-template-rows: 100px 300px;
+      display: grid;
+      flex: 30%;
+      height: auto;
+      align-content: space-between;
+      grid-template-rows: 25% 75%;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-areas:
       "details1 description1"
       "details2 description2"
       "details3 description3";
+      gap: 5px;
+      padding: 20px;
+      margin: 30px;
     }
-}
+
+  }
