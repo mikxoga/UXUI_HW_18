@@ -45,7 +45,7 @@ h3 {
     display: flex;
     justify-content: space-around;
     flex: 33%;
-    height: 250px;
+    height: auto;
     flex-direction: row;
     padding-bottom: 10%;
     padding-top: 0%;
@@ -174,13 +174,18 @@ h3 {
 
 @media only screen and (max-width: 320px) {
       
-  .flex-conteainer {
+  .flex-container {
       flex-direction: column;
-      padding: 5%;
-      margin: 20px;
-      justify-content: flex-end;
+      flex: 100%;
+      columns: 100% 1;
+      text-align: wrap;
     }
   
+    h3 {
+      text-align: stretch;
+    }
+
+
     .workGrid {
       display: grid;
       flex: 30%;
