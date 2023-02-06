@@ -190,7 +190,7 @@ h3 {
       flex: 100%;
       height: auto;
       align-content:space-between;
-      grid-template-rows: 25% 25% 25%;
+      grid-template-rows: 33% 33% 33%;
       grid-template-columns: 1fr 1fr;
       grid-template-areas:
       "details1 description1"
@@ -209,7 +209,7 @@ h3 {
       padding: 5px;
       font-size: medium;
       align-content: stretch;
-      margin: 0%;
+      margin: 2%;
     }
 
   }
