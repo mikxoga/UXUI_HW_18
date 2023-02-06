@@ -178,10 +178,12 @@ h3 {
       
   .flex-container {
       flex-direction: column;
-      flex: 100%;
-      text-align: wrap;
-      align-content: space-around;
+      flex: auto;
+      /*text-align: wrap;*/
+      align-content:stretch;
       align-items: center;
+      font-size: larger;
+     
     }
   
   
@@ -197,9 +199,8 @@ h3 {
       "details2 description2"
       "details3 description3";
       background-position: center;
-      gap: 5px;
       padding: 50px;
-      margin: 0%;
+      margin: 5%;
     
     }
 
@@ -208,8 +209,22 @@ h3 {
       text-align: center;
       padding: 5px;
       font-size: medium;
-      align-content: stretch;
+      align-content: space-between;
       margin: 2%;
+      gap: 2px;
+    }
+
+    .icons {
+      flex: 100%;
+      max-width: 70%;
+      padding: 5px;
+    }
+    
+    .icons img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 70%;
+      border: 5px solid #555;
     }
 
   }
