@@ -11,7 +11,7 @@ h5 {
   margin-top: 2%;
   margin: 0%;
   padding-left: 5%;
-  padding-bottom: 0px;
+  padding-bottom: 10px;
   font-family: unbounded light;
   background-image: -webkit-linear-gradient(pink, yellow);
   height: max-content;
@@ -174,39 +174,45 @@ h3 {
 }
 
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 600px) {
       
   .flex-container {
       flex-direction: column;
       flex: 100%;
       /*columns: 100% 1;*/
-      /*text-align: wrap;*/
+      text-align: wrap;
+      align-content: space-around;
+      align-items: center;
     }
   
     h3 {
-      text-align: stretch;
+      text-align: wrap;
     }
 
 
     .workGrid {
       display: grid;
-      flex: 30%;
+      flex: 100%;
       height: auto;
-      align-content: space-between;
-      grid-template-rows: 25% 75%;
+      align-content:space-around;
+      grid-template-rows: 25% 25% 25%;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-areas:
       "details1 description1"
       "details2 description2"
       "details3 description3";
+      background-position: center;
       gap: 5px;
-      padding: 20px;
-      margin: 30px;
+      padding: 50px;
+      margin: 0%;
+    
     }
 
-    .workDetails3 img {
-      min-width: 100%;
-      
+    .workGrid > div {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 20%;
+      font-size: x-large;
     }
 
   }
