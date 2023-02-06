@@ -179,24 +179,19 @@ h3 {
   .flex-container {
       flex-direction: column;
       flex: 100%;
-      /*columns: 100% 1;*/
       text-align: wrap;
       align-content: space-around;
       align-items: center;
     }
   
-    h3 {
-      text-align: wrap;
-    }
-
-
+  
     .workGrid {
       display: grid;
       flex: 100%;
       height: auto;
-      align-content:space-around;
+      align-content:space-between;
       grid-template-rows: 25% 25% 25%;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       grid-template-areas:
       "details1 description1"
       "details2 description2"
@@ -211,7 +206,7 @@ h3 {
     .workGrid > div {
       background-color: rgba(255, 255, 255, 0.8);
       text-align: center;
-      padding: 20%;
+      padding: 5%;
       font-size: x-large;
     }
 
